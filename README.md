@@ -1,2 +1,4 @@
-# Hugging-Face-Train-JSON-data
-You can extract chunks of JSON data from MongoDB, preprocess them, and then train a model using Hugging Face tools like you've done in your script.
+<img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png" alt="Huggingface Logo" width="300">
+
+
+**Using HuggingFace AutoTrain JSON chunks**
