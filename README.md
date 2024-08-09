@@ -152,6 +152,25 @@ predictions = torch.nn.functional.softmax(outputs.logits, dim=-1)
 predicted_label = torch.argmax(predictions, dim=1).item()
 print(f"Predicted label: {predicted_label}")
 ```
+# Output should look like this Predicted label score should be 1=positive 0=negative
+
+➜  huggingface python3 hugfaceAuto.py
+Token is valid (permission: write).
+Your token has been saved to /Users/jeffery.schmitz/.cache/huggingface/token
+Login successful
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 567.13 examples/s]
+Map: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 460.00 examples/s]
+{'eval_loss': 0.6930631399154663, 'eval_runtime': 0.1085, 'eval_samples_per_second': 9.217, 'eval_steps_per_second': 9.217, 'epoch': 1.0}              
+{'eval_loss': 0.7359107732772827, 'eval_runtime': 0.0149, 'eval_samples_per_second': 67.151, 'eval_steps_per_second': 67.151, 'epoch': 2.0}            
+{'eval_loss': 0.7567771673202515, 'eval_runtime': 0.0144, 'eval_samples_per_second': 69.668, 'eval_steps_per_second': 69.668, 'epoch': 3.0}            
+{'train_runtime': 1.4217, 'train_samples_per_second': 6.33, 'train_steps_per_second': 2.11, 'train_loss': 0.735368569691976, 'epoch': 3.0}             
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  2.12it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 624.62it/s]
+model.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 438M/438M [05:20<00:00, 1.37MB/s]
+Predicted label: 0
+
 
 
 
