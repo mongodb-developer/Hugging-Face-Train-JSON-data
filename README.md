@@ -152,7 +152,7 @@ predictions = torch.nn.functional.softmax(outputs.logits, dim=-1)
 predicted_label = torch.argmax(predictions, dim=1).item()
 print(f"Predicted label: {predicted_label}")
 ```
-# Output should look like this Predicted label score should be 1=positive 0=negative
+# Output should look like this Predicted label score should be 1=positive (or) 0=negative
 
 ```
 ➜  huggingface python3 hugfaceAuto.py
