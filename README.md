@@ -41,7 +41,7 @@ In your project folder name it what you wish add some JSON data
     }
 ]
 ```
-Then run main training script - make sure you are in the same folder as your simple_test_data.json or pass the path to it
+Then run hugfaceAuto.py training script - make sure you are in the same folder as your simple_test_data.json or pass the path to it
 
 ```
 import pandas as pd
