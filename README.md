@@ -3,6 +3,18 @@
 
 **Using HuggingFace AutoTrain JSON chunks**
 
+Extract Data from MongoDB:
+
+Use a MongoDB client (like pymongo) to query and retrieve data from your MongoDB collections.
+Convert the retrieved data into a format suitable for training, like a pandas DataFrame.
+Preprocess and Train:
+
+Preprocess the data (e.g., tokenization, label encoding) using Hugging Face transformers and datasets.
+Train the model as you've done in your script.
+Push to Hub or Deploy:
+
+Once trained, you can push the model to the Hugging Face Hub or deploy it in your environment.
+
 In your project folder name it what you wish add some JSON data
 ```
 [
@@ -24,4 +36,5 @@ In your project folder name it what you wish add some JSON data
     }
 ]
 ```
+
 
