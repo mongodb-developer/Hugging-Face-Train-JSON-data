@@ -15,6 +15,11 @@ Push to Hub or Deploy:
 
 Once trained, you can push the model to the Hugging Face Hub or deploy it in your environment.
 
+First off install the required packages
+```
+pip install -r requirements.txt
+```
+
 In your project folder name it what you wish add some JSON data
 ```
 [
