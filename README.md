@@ -1,7 +1,7 @@
 <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png" alt="Huggingface Logo" width="300">
 
 
-# Converting the pandas DataFrame into a Hugging Face Dataset
+# Converting the MongoDB data into a Hugging Face Dataset
 
 Extract Data from MongoDB:
 
