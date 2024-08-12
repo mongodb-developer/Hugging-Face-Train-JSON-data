@@ -10,8 +10,7 @@ Convert the retrieved data into a format suitable for training, like a pandas Da
 Preprocess and Train:
 
 Preprocess the data (e.g., tokenization, label encoding) using Hugging Face transformers and datasets.
-Train the model as you've done in your script.
-Push to Hub or Deploy:
+Train the model.
 
 Once trained, you can push the model to the Hugging Face Hub or deploy it in your environment.
 
