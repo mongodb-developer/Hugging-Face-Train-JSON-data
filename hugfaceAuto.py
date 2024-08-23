@@ -6,7 +6,7 @@ from huggingface_hub import login
 import torch
 
 # Step 1: Authenticate with Hugging Face using your write token
-login(token="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")  # Replace with your actual Hugging Face write token
+login(token="")  # Replace with your actual Hugging Face write token
 
 # Step 2: Load the JSON file into a DataFrame
 df = pd.read_json('simple_test_data.json')
